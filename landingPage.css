@@ -144,6 +144,11 @@ form {
   font-weight: 100;
   margin-top: 2rem;
 }
+.form-items{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
 .form h5,
 .contact h5 {
@@ -237,11 +242,14 @@ footer span {
   .contact p {
     font-size: 1.2rem;
   }
+}
+@media (max-width: 480px) {
   .form input,
   .form textarea {
-    width: 80%;
+    width: 20rem;
   }
-  .form{
-    padding-left: 1.5rem;
+  .form-items{
+    padding-left: 2.em;
   }
+  
 }
