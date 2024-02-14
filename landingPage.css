@@ -239,6 +239,6 @@ footer span {
   }
   .form input,
   .form textarea {
-    width: 85%;
+    width: 50%;
   }
 }
