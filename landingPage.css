@@ -251,5 +251,8 @@ footer span {
   .form-items{
     padding-left: 2.5rem;
   }
+  .msg-btn{
+    width: 20rem;
+  }
   
 }
