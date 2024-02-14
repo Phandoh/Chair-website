@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 13rem;
+}
+
+form {
+  width: 100%;
+}
+.logo {
+  width: 5rem;
+  margin-bottom: 6rem;
+}
+.hero,
+.invite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero h1,
+#our-chairs {
+  font-size: 2.35rem;
+  font-weight: 900;
+  margin-bottom: 1.4rem;
+  color: rgb(52, 51, 51);
+}
+.hero h3,
+#the-selection {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: rgb(170, 170, 170);
+  margin-bottom: 5.5rem;
+}
+
+.discover-btn {
+  display: inline;
+  padding: 1rem 2rem;
+  border: 1px solid rgb(106, 82, 40);
+  color: rgb(106, 82, 40);
+  background-color: transparent;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#page-2 {
+  width: 100%;
+  background-color: rgb(255, 246, 236);
+  padding: 10rem 3rem 0;
+}
+
+#page-3 {
+  background-color: rgb(60, 58, 71);
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#page-4{
+  margin-top: 0;
+}
+
+.chairs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+.chair {
+  height: 600px;
+}
+.chair-img {
+  height: 400px;
+}
+.chair-info {
+  padding-top: 2rem;
+}
+.chair-info h2 {
+  margin-bottom: 1rem;
+  font-weight: 100;
+  color: gray;
+}
+.chair-info h4 {
+  margin-bottom: 0.8rem;
+  color: rgb(52, 51, 51);
+}
+.chair-info p {
+  margin-bottom: 1.6rem;
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+#our-chairs {
+  font-size: 3rem;
+  letter-spacing: 3px;
+}
+#the-selection {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.selection-p {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.furniture {
+  width: 100%;
+  height: inherit;
+}
+.invite a {
+  text-decoration: none;
+  color: rgb(159, 118, 87);
+}
+.invite {
+  margin-bottom: 10rem;
+}
+
+.form, .contact{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.contact{
+  width: 80%;
+  height: 400px;
+}
+.contact h2{
+  font-weight: 800;
+  font-size: 2.3rem;
+}
+.contact p{
+  color: gray;
+  font-size: 1.3rem;
+  font-weight: 100;
+  margin-top: 2rem;
+}
+
+.form h5,.contact h5 {
+  font-size: 0.76rem;
+  font-weight: 50;
+  margin-bottom: 0.8rem;
+  color: rgb(119, 119, 119);
+}
+.form label {
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+}
+.form input {
+  width: 100%;
+  height: 40px;
+}
+.form textarea {
+  width: 100%;
+}
+.form input,
+.form textarea {
+  background-color: rgba(255, 255, 255,0.1);
+  border: none;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: white;
+  resize: none;
+}
+form input:focus, form textarea:focus{
+  outline: none;
+  background-color: rgba(255, 255, 255,0.2);
+}
+.form p {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: rgb(119, 119, 119);
+}
+.msg-btn {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  transition-property: color;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+.msg-btn:hover{
+  background-color: white;
+  color: rgb(56, 56, 56);
+}
+.msg-btn:active, .discover-btn:active{
+  opacity: 0.6;
+}
+.socials{
+  margin-top: 8rem;
+  margin-bottom: 10rem;
+  display: flex;
+  width: 140px;
+  justify-content: space-between;
+}
+footer{
+  display: flex;
+  justify-content: center;
+}
+#footer-p{
+  font-size: .8rem;
+  text-align: center;
+  color: rgb(48, 48, 48);
+}
+footer span{
+  color: rgb(152, 131, 40);
+  font-weight: 600;
+}
+
+@media (width < 850px) {
+  .chairs {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .hero h1,
+  .hero h3 {
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .contact p{
+    font-size: 1.2rem;
+  }
+}
